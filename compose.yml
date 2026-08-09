@@ -1,0 +1,12 @@
+services:
+  docs:
+    build: .
+    container_name: turbo-docs
+    hostname: turbo-docs
+    restart: unless-stopped
+    networks:
+      - persistent
+
+networks:
+  persistent:
+    external: true
