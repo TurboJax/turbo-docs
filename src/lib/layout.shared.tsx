@@ -5,7 +5,7 @@ export function baseOptions(): BaseLayoutProps {
   return {
     nav: {
       title: appName,
-      url: "/docs"
+      url: "/"
     },
     githubUrl: `https://github.com/${gitInfo.user}/${gitInfo.repo}`,
   };
