@@ -4,7 +4,6 @@
 # generated content
 .source
 package-lock.yaml
-pnpm-lock.yaml
 next-env.d.ts
 
 # test & build
