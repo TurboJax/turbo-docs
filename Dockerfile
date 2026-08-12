@@ -1,5 +1,5 @@
 # Building the app
-FROM ghcr.io/pnpm/pnpm:11 as builder
+FROM ghcr.io/pnpm/pnpm:11 AS builder
 
 RUN pnpm runtime set node 22 -g
 ENV CI=true
