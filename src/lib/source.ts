@@ -6,16 +6,7 @@ import { icons as lucide } from 'lucide-react';
 import { createElement } from 'react';
 
 const docs = defineDocs({
-  dir: 'content/docs',
-  docs: {
-    schema: pageSchema,
-    postprocess: {
-      includeProcessedMarkdown: true,
-    },
-  },
-  meta: {
-    schema: metaSchema,
-  },
+  dir: 'content/docs'
 });
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
