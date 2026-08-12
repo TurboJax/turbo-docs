@@ -1,5 +1,5 @@
 services:
-  docs:
+  app:
     build: .
     container_name: turbo-docs
     hostname: turbo-docs
