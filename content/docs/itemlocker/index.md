@@ -1,7 +1,7 @@
 ---
 title: ItemLocker
 description: Lets you prevent users from having different items.
-icon: /img/itemlocker.webp
+icon: /img/itemlocker/logo.webp
 ---
 
 # ItemLocker is not finished or released on any platform.
