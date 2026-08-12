@@ -1,0 +1,10 @@
+
+{
+    "title": "InfuseV1",
+    "description": "",
+    "pages": [
+        "index"
+    ],
+    "defaultOpen": false,
+    "root": true
+}
