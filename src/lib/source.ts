@@ -29,6 +29,13 @@ export const source = loader({
     if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
 
     // TODO: Check for icon locally
-    return (<img src={`${icon}`} alt={`${icon}`} style={{ width: '20px', borderRadius: '3px' }}/>);
+    return createElement("img", {
+      src: icon,
+      alt: icon,
+      style: {
+        width: '20px',
+        borderRadius: '3px',
+      }
+    });
   }
 });
