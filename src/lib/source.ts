@@ -2,7 +2,7 @@ import { loader } from 'fumadocs-core/source';
 import { root } from './shared';
 import { defineDocs } from 'fumadocs-mdx/macro';
 import { metaSchema, pageSchema } from 'fumadocs-core/source/schema';
-import { icons } from 'lucide-react';
+import { icons as lucide } from 'lucide-react';
 import { createElement } from 'react';
 
 const docs = defineDocs({
@@ -19,16 +19,17 @@ const docs = defineDocs({
 });
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
-// Applies icons to the pages
 export const source = loader({
   baseUrl: root,
   source: docs.toFumadocsSource(),
   icon(icon) {
+    // Ignoring undefinded icons
     if (!icon) return;
 
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
+    // Loading lucide icons
+    if (icon in lucide) return createElement(lucide[icon as keyof typeof lucide]);
 
-    // TODO: Check for icon locally
+    // Loading local images
     return createElement("img", {
       src: icon,
       alt: icon,
