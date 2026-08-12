@@ -1,7 +1,6 @@
 import { loader } from 'fumadocs-core/source';
 import { root } from './shared';
 import { defineDocs } from 'fumadocs-mdx/macro';
-import { metaSchema, pageSchema } from 'fumadocs-core/source/schema';
 import { icons as lucide } from 'lucide-react';
 import { createElement } from 'react';
 
