@@ -19,12 +19,16 @@ const docs = defineDocs({
 });
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
+// Applies icons to the pages
 export const source = loader({
   baseUrl: root,
   source: docs.toFumadocsSource(),
   icon(icon) {
     if (!icon) return;
 
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons])
+    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
+
+    // TODO: Check for icon locally
+    return (<img src={`${icon}`} alt={`${icon}`} style={{ width: '20px', borderRadius: '3px' }}/>);
   }
 });
