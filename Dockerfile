@@ -2,6 +2,7 @@
 FROM ghcr.io/pnpm/pnpm:11 as builder
 
 RUN pnpm runtime set node 22 -g
+ENV CI=true
 WORKDIR /app
 COPY . .
 RUN pnpm install --frozen-lockfile
