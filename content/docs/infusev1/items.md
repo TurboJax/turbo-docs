@@ -25,7 +25,7 @@ Recipe:
 Finally we have the reviver.  It is a nether star.  
 Right-clicking it opens up a menu with a list of every banned player.  Click on their head to revive them.  
 The two feathers move you 1 page to the left/right.  
-There are a lot of configs related to reviving people.  See [here](/infusev1/configuration#reviver-configs) for what they are.
+There are a lot of configs related to reviving people.  See [here](/infusev1/configuration) for what they are.
 
 Recipe:
 ![reviver_recipe](/img/infusev1/reviver_recipe.png)
