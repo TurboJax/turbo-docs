@@ -45,10 +45,10 @@ Multiple targets can be specified with `@` selectors.
 The new score is clamped between the minimum and maximum scores, and the target's effects are rerolled.  
 If the score is set to the ban score, the player is banned.  
 
-## /infuse give \<targedt> \<item> [count]
+## /infuse give \<target> \<item> [count]
 ### Requires `infusev1.give` permission
 
 Acts like /give but for the infuse items.  
 Multiple targets can be selected with `@` selectors.  
 The default count is 1, but you can give yourself multiple of the same item.  
-Valid items are `enhancer`, `infuse_effect`, and `reviver`.  
+The only valid item is `good_potion`.  
