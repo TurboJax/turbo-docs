@@ -18,21 +18,73 @@ Each translation *should* be key->value, but you can use more complex paths if y
 The translation stores support MiniMessage formatting, and you can use placeholders by surrounding them with "%" symbols.  
 
 ## Installation
-**I use gradle with the kotlin DSL, so my docs currently only show how to use that setup.**  
-Eventually, I may add other forms of this, but I don't know enough about react to do that.  
 First things first, let's get the maven repo in your project.  
-```kt
-repositories {
-    maven("https://maven.turbojax.org/releases")
-}
-```
+<CodeBlockTabs defaultValue="kotlin">
+    <CodeBlockTabsList>
+        <CodeBlockTabsTrigger value="xml">Maven</CodeBlockTabsTrigger>
+        <CodeBlockTabsTrigger value="groovy">Gradle Groovy</CodeBlockTabsTrigger>
+        <CodeBlockTabsTrigger value="kotlin">Gradle Kotlin</CodeBlockTabsTrigger>
+    </CodeBlockTabsList>
 
-Then, we can add the dependency.  It works best when shaded.  
-```kt
-dependencies {
-    implementation("org.turbojax:messages:1.2.1")
-}
-```
+    <CodeBlockTab value="xml">
+    ```xml
+    <repositories>
+      <repository>
+        <url>https://maven.turbojax.org/releases</url>
+      </repository>
+    </repositories>
+    ```
+    </CodeBlockTab>
+    <CodeBlockTab value="groovy">
+    ```groovy
+    repositories {
+        maven "https://maven.turbojax.org/releases"
+    }
+    ```
+    </CodeBlockTab>
+    <CodeBlockTab value="kotlin">
+    ```kotlin
+    repositories {
+        maven("https://maven.turbojax.org/releases")
+    }
+    ```
+    </CodeBlockTab>
+</CodeBlockTabs>
+
+Then, we can add the dependency.
+<CodeBlockTabs defaultValue="kotlin">
+    <CodeBlockTabsList>
+        <CodeBlockTabsTrigger value="xml">Maven</CodeBlockTabsTrigger>
+        <CodeBlockTabsTrigger value="groovy">Gradle Groovy</CodeBlockTabsTrigger>
+        <CodeBlockTabsTrigger value="kotlin">Gradle Kotlin</CodeBlockTabsTrigger>
+    </CodeBlockTabsList>
+
+    <CodeBlockTab value="xml">
+    ```xml
+    <dependencies>
+      <dependency>
+        <groupId>org.turbojax</groupId>
+        <artifactId>messages</artifactId>
+        <version>1.3.1</version>
+      </dependency>
+    </dependencies>
+    ```
+    </CodeBlockTab>
+    <CodeBlockTab value="groovy">
+    ```groovy
+    dependencies {
+        implementation "org.turbojax:messages:1.3.1"
+    }
+    ```
+    </CodeBlockTab>
+    <CodeBlockTab value="kotlin">
+    ```kotlin
+    dependencies {
+        implementation("org.turbojax:messages:1.3.1")
+    }
+    ```
+    </CodeBlockTab>
+</CodeBlockTabs>
 
 ## Usage
 ### Folder setup
